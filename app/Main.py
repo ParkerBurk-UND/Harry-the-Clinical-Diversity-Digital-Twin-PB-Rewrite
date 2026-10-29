@@ -152,7 +152,10 @@ if page == "Main":
                 reference_override=condition_reference,
             )
             render_score_tiles(condition_score, condition_breakdown)
-            render_breakdown_table(condition_breakdown)
+            render_breakdown_table(
+                condition_breakdown,
+                download_key=f"condition_breakdown_{condition_name}",
+            )
 
         # -------------------------
         # Recommendations

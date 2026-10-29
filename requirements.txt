@@ -21,3 +21,4 @@ joblib
 sentence-transformers>=2.2
 transformers>=4.38
 torch>=2.2
+torchvision>=0.17

@@ -140,7 +140,10 @@ def _format_percent_values(df: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
-def render_breakdown_table(breakdown: Optional[pd.DataFrame]) -> None:
+def render_breakdown_table(
+    breakdown: Optional[pd.DataFrame],
+    download_key: str = "icer_breakdown_csv",
+) -> None:
     """Renders an ICER breakdown table safely."""
     st.subheader("ICER Breakdown Table")
 
@@ -186,4 +189,5 @@ def render_breakdown_table(breakdown: Optional[pd.DataFrame]) -> None:
         data=csv_bytes,
         file_name="icer_breakdown.csv",
         mime="text/csv",
+        key=download_key,
     )
