@@ -69,7 +69,17 @@ CONDITION_OPTIONS = [
     {"text": "Hypertension", "Percent_DP": {}},
     {"text": "Diabetes Mellitus Type 1", "Percent_DP": {}},
     {"text": "Diabetes Mellitus Type 2", "Percent_DP": {}},
-    {"text": "Obesity", "Percent_DP": {}},
+    {"text": "Obesity", "Percent_DP": {
+        "white_pct": 0.324, ## KFF Data https://www.kff.org/state-health-policy-data/state-indicator/adult-obesity-by-re/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D
+        "black_pct": 0.418,
+        "asian_pct": 0.147,
+        "aian_pct":  0.406,
+    
+        "female_pct": 0.526,
+        "male_pct":   0.474,
+    
+        "age65_pct":  0.180, 
+        }},
     {"text": "Hyperlipidemia", "Percent_DP": {}},
     {"text": "Heart Failure", "Percent_DP": {}},
     {"text": "Atrial Fibrillation", "Percent_DP": {}},
