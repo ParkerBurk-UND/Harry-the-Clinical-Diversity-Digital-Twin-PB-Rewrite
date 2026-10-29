@@ -11,6 +11,7 @@ plotly>=5.20
 matplotlib>=3.7
 openpyxl>=3.1
 simpful>=2.11.0
+setuptools<81
 pydantic>=2.5
 pytest>=7.4
 reportlab>=4.0
